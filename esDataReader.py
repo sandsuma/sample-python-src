@@ -44,8 +44,8 @@ def getDatasets():
                         "query": ES_QUERY,
                      }
 
-    if ( len(es_sort) > 0 ) :
-        ES_SEARCH_BODY["sort"]  = json.loads(es_sort)
+    if ( len(ES_SORT) > 0 ) :
+        ES_SEARCH_BODY["sort"]  = json.loads(ES_SORT)
 
     print('**** ES Search ',  ES_SEARCH_BODY)
     
