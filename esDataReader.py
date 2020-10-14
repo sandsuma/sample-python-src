@@ -26,8 +26,8 @@ def getDatasets():
     DATA_DIR = os.environ['DATA_DIR']
     DATA_NAME = os.environ['DATA_NAME']
     ES_DATA_FLDS = os.environ['ES_DATA_FLDS'].split(",")
-    MAX_RECS_IN_FILE = os.environ['MAX_RECS_IN_FILE']
-    PROCESS_ITERATIONS = os.environ['PROCESS_ITERATIONS']
+    MAX_RECS_IN_FILE = int(os.environ['MAX_RECS_IN_FILE'])
+    PROCESS_ITERATIONS = int(os.environ['PROCESS_ITERATIONS'])
 
     # ES_URL = es_url
     # ES_INDEX = es_index
